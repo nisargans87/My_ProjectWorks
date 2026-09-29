@@ -1,172 +1,223 @@
-
-```markdown
-# 🌐 Portfolio | Nisarga NS
+# Explore Me | Nisarga NS
 
 <p align="center">
   <strong>A Personal Portfolio Website</strong>
 </p>
 
 <p align="center">
-  A lightweight static portfolio built with <b>HTML5</b> and <b>CSS3</b> to present my technical profile, skills, projects, education, and professional interests.
+  A lightweight static portfolio built with HTML5 and CSS3 to present my technical profile, skills, projects, education, and professional interests.
 </p>
 
 <p align="center">
-  
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-  ![Status](https://img.shields.io/badge/Status-Stage%201-blue)
-  ![Type](https://img.shields.io/badge/Type-Static%20Website-lightgrey)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Stage%201-blue)
+![Type](https://img.shields.io/badge/Type-Static%20Website-lightgrey)
 
 </p>
 
 ---
 
-## 📖 About the Project
+## About the Project
 
-**Explore Me | Nisarga NS** is a foundational personal portfolio website developed using core front-end technologies.  
+**Explore Me | Nisarga NS** is a foundational personal portfolio website developed using core front-end technologies.
 
-- Clean, structured, and lightweight web interface  
-- Semantic HTML5 + external CSS styling  
-- No JavaScript, frameworks, or backend dependencies  
+The current implementation focuses on presenting professional and academic information through a clean, structured, and lightweight web interface. The project demonstrates fundamental web development practices including semantic HTML structure, external CSS styling, content organization, and static website deployment.
 
-This project demonstrates **fundamental web development practices** and serves as the starting point for a more advanced professional portfolio.
+The current version intentionally uses only **HTML5 and CSS3**, without JavaScript, frameworks, backend services, or external libraries.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Technology | Purpose |
-|------------|---------|
-| **HTML5**  | Semantic structure and portfolio content |
-| **CSS3**   | Styling, layout, typography, colors, spacing, and visual presentation |
+|---|---|
+| **HTML5** | Semantic structure and organization of portfolio content |
+| **CSS3** | Layout, typography, colors, spacing, and visual styling |
 
 <p align="left">
-  
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 
 </p>
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Explore_Me_Nisarga/
 │
-├── index.html   # Main portfolio webpage
-├── style.css    # Stylesheet for layout, typography, colors, spacing
-└── README.md    # Project documentation
-```
 
----
 
-## 📑 Portfolio Sections
 
-- **About Me** → Academic background, technical interests, focus areas  
-- **Skills** → Python, Git & GitHub, Web Development, Cloud Deployment, Computer Networks  
-- **Projects** → Practical development showcases  
-- **Education** → Undergraduate academic details  
-- **Contact** → Professional contact information  
 
----
+File Description
+File	Description
+index.html	Main portfolio webpage containing profile, skills, projects, education, and contact sections
+style.css	Stylesheet responsible for layout, typography, colors, spacing, cards, and overall visual presentation
+README.md	Project documentation and technical information
+Portfolio Sections
+About Me
 
-## ✨ Key Features
+Introduces my academic background, technical interests, and areas of focus in software development, cloud computing, and computer networks.
 
-- Clean and structured portfolio layout  
-- Semantic HTML5 structure  
-- External CSS stylesheet  
-- Card-based section presentation  
-- Consistent typography and spacing  
-- Lightweight static implementation  
-- No backend or JavaScript dependency  
-- Suitable for static hosting  
+Skills
 
----
+The portfolio currently highlights the following technical areas:
 
-## 🎯 Development Focus
+Python Programming
+Git & GitHub
+Web Development
+Cloud Deployment
+Computer Networks
+Projects
 
-This project represents the **foundation of my personal portfolio** and my initial implementation of a static professional website.  
+Provides a dedicated section for presenting practical development projects and technical work.
 
-**Workflow practiced:**
+Education
 
-```
-HTML Structure → CSS Styling → Content Organization → Git Version Control → GitHub Repository Management → Static Website Deployment
-```
+Contains academic information related to my undergraduate studies.
 
----
+Contact
 
-## 📚 Learning Outcomes
+Provides a dedicated section for professional contact information.
 
-- Structuring webpages using semantic HTML5  
-- Designing reusable CSS rules  
-- Managing spacing, typography, colors, and layouts  
-- Organizing projects with Git & GitHub  
-- Preparing static websites for deployment  
+Key Features
+Clean and structured portfolio layout
+Semantic HTML5 structure
+External CSS stylesheet
+Organized content sections
+Card-based section presentation
+Consistent typography and spacing
+Lightweight static implementation
+Simple and maintainable codebase
+No backend dependency
+No JavaScript dependency
+Suitable for static hosting
+Development Focus
 
----
+This project represents the foundation of my personal portfolio and my initial implementation of a static professional website using core web technologies.
 
-## 🚀 Deployment
+The implementation is intentionally lightweight and focuses on establishing a structured portfolio architecture before introducing additional functionality and technologies.
 
-This project can be deployed easily on static hosting platforms:
+The project also provides practical experience with:
 
-- **Vercel**  
-- **GitHub Pages**  
-- **Netlify**
+HTML Structure
+      ↓
+CSS Styling
+      ↓
+Content Organization
+      ↓
+Git Version Control
+      ↓
+GitHub Repository Management
+      ↓
+Static Website Deployment
+Learning Outcomes
 
-Deployment architecture:
+Through this project, I practiced:
 
-```
-User → Static Hosting Platform → index.html + style.css
-```
+Structuring webpages using semantic HTML5
+Connecting and managing external CSS stylesheets
+Creating reusable CSS rules
+Organizing content into logical sections
+Managing typography, spacing, colors, and layouts
+Building a basic card-based interface
+Managing source code with Git
+Using GitHub for repository management
+Understanding basic version control workflows
+Preparing a static website for deployment
+Deployment
 
----
+The project consists entirely of static HTML and CSS files and does not require a server-side runtime.
 
-## 🔮 Future Development
+It can be deployed using static hosting platforms such as:
 
-Planned enhancements include:
+Vercel
+GitHub Pages
+Netlify
 
-- Responsive navigation & layouts  
-- JavaScript-based interactions  
-- Dynamic project showcase cards  
-- GitHub & LinkedIn integration  
-- Resume & certifications section  
-- Dark / light theme toggle  
-- Animations & transitions  
-- Accessibility improvements  
-- Performance optimization  
+The deployment architecture is intentionally simple:
 
----
+User
+  │
+  ▼
+Static Hosting Platform
+  │
+  ├── index.html
+  └── style.css
 
-## 📌 Version Information
+No database, API server, or backend service is required for the current version.
 
-| Attribute        | Details |
-|------------------|---------|
-| Current Version  | Stage 1 |
-| Project Type     | Static Portfolio Website |
-| Primary Tech     | HTML5, CSS3 |
-| Backend          | Not Required |
-| JavaScript       | Not Used |
-| Status           | Foundation / Initial Portfolio |
+Future Development
 
----
+The current implementation serves as the foundation for a more advanced personal portfolio.
 
-## 👨‍💻 Author
+Planned enhancements may include:
 
-**Nisarga NS**  
-BCA | Software Development | Cloud Computing | Computer Networks  
+Responsive navigation
+Advanced responsive layouts
+JavaScript-based interactions
+Dynamic project showcase
+GitHub integration
+LinkedIn integration
+Technical certifications section
+Resume integration
+Interactive contact functionality
+Dark / light theme
+Animations and transitions
+Accessibility improvements
+Performance optimization
+Modern responsive UI design
 
----
+Future development will be introduced progressively while maintaining the existing Git history and version-control workflow.
 
-## 📜 Repository Purpose
+Version Information
+Attribute	Details
+Current Version	Stage 1
+Project Type	Static Portfolio Website
+Primary Technologies	HTML5, CSS3
+Backend	Not Required
+JavaScript	Not Used
+Status	Foundation / Initial Portfolio Implementation
+Author
+Nisarga NS
 
-This repository documents my progression in **web development, Git/GitHub version control, and deployment-oriented development**, while providing a foundation for building a more comprehensive professional portfolio.
+BCA | Software Development | Cloud Computing | Computer Networks
 
----
+The portfolio represents my progression in web development and provides a foundation for showcasing future technical projects, skills, and professional experience.
 
-<p align="center">
-  <strong>Explore. Learn. Build. Develop.</strong>
-</p>
-```
+Repository Purpose
 
-Would you like me to also **add Shields.io badges for GitHub stats** (like repo size, stars, forks, last commit) so your README looks even more dynamic?
+This repository documents the development of my personal portfolio from its initial static implementation toward a more comprehensive professional portfolio.
+
+It demonstrates practical experience with:
+
+Web Development
+     +
+Git & GitHub
+     +
+Version Control
+     +
+Static Deployment
+     +
+Continuous Portfolio Development
+
+The repository is maintained as part of my technical development and project portfolio.
+
+
+
+
+
+
+
+
+
+
+
+├── index.html
+├── style.css
+└── README.md
