@@ -1,4 +1,4 @@
-# AI Chatbot
+# AI Chatbot Interface 
 
 A simple AI Chatbot interface built using HTML, CSS, and JavaScript.
 
@@ -15,6 +15,9 @@ A simple AI Chatbot interface built using HTML, CSS, and JavaScript.
 - HTML
 - CSS
 - JavaScript
+
+## AI ChatBot Interface 
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/02662686-f28e-4b56-9145-abdf1c5d94ff" />
 
 ## How to Run
 
