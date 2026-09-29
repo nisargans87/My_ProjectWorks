@@ -1,4 +1,3 @@
-Here’s a polished and visually appealing **README.md** prompt for your GitHub portfolio project. It’s structured with badges, tables, and clear sections so that GitHub renders it beautifully:
 
 ```markdown
 # 🌐 Portfolio | Nisarga NS
@@ -169,7 +168,5 @@ This repository documents my progression in **web development, Git/GitHub versio
   <strong>Explore. Learn. Build. Develop.</strong>
 </p>
 ```
-
-This version is **GitHub-ready**: badges, tables, emojis, and clear sectioning make it visually appealing and professional.  
 
 Would you like me to also **add Shields.io badges for GitHub stats** (like repo size, stars, forks, last commit) so your README looks even more dynamic?
