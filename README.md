@@ -29,12 +29,12 @@ The repository will continue to grow as I add new projects during my journey of 
 ## Repository Structure
 
 ```plaintext
+Repo - My_ProjectWorks
 My_ProjectWorks/
 ├── My_First_Blog_Project/
 │   ├── My_First_Blog_Project.html
 │   └── README.md
+├── My_Portfolio_Stage1/
+│   ├── index.html
+│   └── style.css
 └── README.md
-```plaintext
-── My_Portfolio_Stage1/
-  ├── index.html
-  └── style.css
