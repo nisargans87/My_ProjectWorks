@@ -1,4 +1,4 @@
-# Explore Me | Nisarga NS
+# Portfolio | Nisarga NS
 
 <p align="center">
   <strong>A Personal Portfolio Website</strong>
@@ -49,12 +49,12 @@ The current version intentionally uses only **HTML5 and CSS3**, without JavaScri
 
 ```text
 Explore_Me_Nisarga/
-│
+- index.html
+- style.css
+- README.md
 
+ ## File Description
 
-
-
-File Description
 File	Description
 index.html	Main portfolio webpage containing profile, skills, projects, education, and contact sections
 style.css	Stylesheet responsible for layout, typography, colors, spacing, cards, and overall visual presentation
@@ -209,15 +209,3 @@ Continuous Portfolio Development
 The repository is maintained as part of my technical development and project portfolio.
 
 
-
-
-
-
-
-
-
-
-
-├── index.html
-├── style.css
-└── README.md
