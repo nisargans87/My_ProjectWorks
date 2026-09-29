@@ -1,5 +1,5 @@
 
-# Explore Me | Nisarga NS
+# Nisarga NS
 
 > A foundational personal portfolio website built with pure HTML5 and CSS3 to present my profile, technical skills, projects, education, and contact information through a clean and structured web interface.
 
@@ -7,7 +7,7 @@
 
 ## About the Project
 
-**Explore Me | Nisarga NS** is a personal portfolio website created as an initial web development project and a foundation for presenting my technical profile online.
+**Nisarga NS** is a personal portfolio website created as an initial web development project and a foundation for presenting my technical profile online.
 
 The current version focuses on a simple, structured, and responsive-ready interface using only core front-end technologies. It demonstrates the use of semantic HTML for content organization and CSS for layout, typography, spacing, colors, and visual presentation.
 
