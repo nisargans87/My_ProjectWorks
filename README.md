@@ -22,12 +22,13 @@ The repository will continue to grow as I add new projects during my journey of 
 |---|---------|-------------|--------------|
 | 1 | [My First Blog Project](./My_First_Blog_Project/) | A beginner-friendly static personal blog webpage created to learn and demonstrate fundamental web development concepts, including HTML structure, CSS styling, and educational content about JavaScript. | HTML5, CSS3 |
 | 2 | [My Portfolio Stage 1](./My_Portfolio_Stage1/) | A foundational personal portfolio website developed to practice structuring professional profile information, technical skills, education, and projects using a clean HTML and CSS layout. | HTML5, CSS3 |
+| 3 | [AI ChatBot Interface](./AI_ChatBot_Interface/) | A web-based chatbot interface developed as a practical project for building an interactive AI-oriented user interface, with structured web components and a clean frontend layout. | HTML5, CSS3 |
 ---
 
 ## Repository Structure
 
 ```plaintext
-Repo - My_ProjectWorks
+Repository - My_ProjectWorks
 My_ProjectWorks/
 ├── My_First_Blog_Project/
 │   ├── My_First_Blog_Project.html
@@ -35,4 +36,8 @@ My_ProjectWorks/
 ├── My_Portfolio_Stage1/
 │   ├── index.html
 │   └── style.css
+├── AI_ChatBot_Interface/
+│   ├── index.html
+│   └── README.md
 └── README.md
+
