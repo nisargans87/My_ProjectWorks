@@ -8,7 +8,7 @@
  ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
  ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo= plotly&logoColor=white) 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) 
-![TensorFlow] |
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![TensorFlow] |
 ---
 
 ## About
