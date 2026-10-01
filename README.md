@@ -33,7 +33,7 @@ The repository will continue to grow as I add new projects during my journey of 
 | 2 | [My Portfolio Stage 1](./My_Portfolio_Stage1/) | A foundational personal portfolio website developed to practice structuring professional profile information, technical skills, education, and projects using a clean HTML and CSS layout. | HTML5, CSS3 |
 | 3 | [AI ChatBot Interface](./AI_ChatBot_Interface/) | A web-based chatbot interface developed as a practical project for building an interactive AI-oriented user interface, with structured web components and a clean frontend layout. | HTML5, CSS3 |
 | 4 | [Medicinal Plant Leaves Classification](./medicinal-plant-classifier/) | A deep-learning project that analyzes medicinal plant leaf images and predicts their species. Includes dataset exploration, model training, and an interactive web app for image classification. | Python - Libraries| 
-| 3 | [Fingerprint Detection System](./Fingerprint Detection System/) | A deep-learning web application that classifies uploaded fingerprint images, displays prediction confidence, and stores detection history in SQLite. | Python - Flask, TensorFlow/Keras, NumPy, SQLite, HTML5, CSS3, JavaScript |
+| 3 | [Fingerprint Detection System](<u>./Fingerprint Detection System/</u>) | A deep-learning web application that classifies uploaded fingerprint images, displays prediction confidence, and stores detection history in SQLite. | Python - Flask, TensorFlow/Keras, NumPy, SQLite, HTML5, CSS3, JavaScript |
 ---
 
 ## Repository Structure
