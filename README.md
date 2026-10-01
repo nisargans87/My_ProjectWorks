@@ -12,7 +12,8 @@
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
 ![Pillow](https://img.shields.io/badge/Pillow-3776AB?logo=python&logoColor=white) 
-
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
 ---
 
 ## About
@@ -32,6 +33,7 @@ The repository will continue to grow as I add new projects during my journey of 
 | 2 | [My Portfolio Stage 1](./My_Portfolio_Stage1/) | A foundational personal portfolio website developed to practice structuring professional profile information, technical skills, education, and projects using a clean HTML and CSS layout. | HTML5, CSS3 |
 | 3 | [AI ChatBot Interface](./AI_ChatBot_Interface/) | A web-based chatbot interface developed as a practical project for building an interactive AI-oriented user interface, with structured web components and a clean frontend layout. | HTML5, CSS3 |
 | 4 | [Medicinal Plant Leaves Classification](./medicinal-plant-classifier/) | A deep-learning project that analyzes medicinal plant leaf images and predicts their species. Includes dataset exploration, model training, and an interactive web app for image classification. | Python - Libraries| 
+| 3 | Fingerprint Detection System | A deep-learning web application that classifies uploaded fingerprint images, displays prediction confidence, and stores detection history in SQLite. | Python - Flask, TensorFlow/Keras, NumPy, SQLite, HTML5, CSS3, JavaScript |
 ---
 
 ## Repository Structure
