@@ -55,5 +55,12 @@ My_ProjectWorks/
 │   ├── ...
 │   ├── ...
 │   └── ...
+|── Fingerprint_Detection_System/
+├── dataset/
+│   └── SOCOFing/
+├── model/
+├── static/
+│   └── uploads/
+└── templates/
 └── README.md
 
