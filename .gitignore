@@ -1,5 +1,5 @@
-Fingerprint_Deduction/venv/
-Fingerprint_Deduction/__pycache__/
-Fingerprint_Deduction/dataset/
-Fingerprint_Deduction/static/uploads/
-Fingerprint_Deduction/*.db
+Fingerprint_Detection_System/venv/
+Fingerprint_Detection_System/__pycache__/
+Fingerprint_Detection_System/dataset/
+Fingerprint_Detection_System/static/uploads/
+Fingerprint_Detection_System/*.db
