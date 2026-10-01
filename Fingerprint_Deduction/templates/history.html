@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detection History</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#2605aa;
+            padding:40px;
+        }
+
+        .wrap{
+            max-width:900px;
+            margin:auto;
+            background:#fff;
+            border-radius:12px;
+            padding:30px;
+            box-shadow:0 5px 20px rgba(0,0,0,.1);
+        }
+
+        h1{
+            color:#2112c5;
+            margin-bottom:20px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-bottom:20px;
+        }
+
+        th{
+            background:#2db56a;
+            color:white;
+            padding:12px;
+        }
+
+        td{
+            padding:12px;
+            border-bottom:1px solid #ddd;
+        }
+
+        tr:nth-child(even){
+            background:#fafafa;
+        }
+
+        .group{
+            font-weight:bold;
+            color:#b8061b;
+        }
+
+        .buttons{
+            display:flex;
+            gap:15px;
+            margin-top:20px;
+        }
+
+        .backBtn{
+            background:#2563eb;
+            color:white;
+            text-decoration:none;
+            padding:10px 20px;
+            border-radius:8px;
+        }
+
+        .clearBtn{
+            background:#bc1831;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        .clearBtn:hover{
+            background:#6b12e0;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="wrap">
+
+    <h1>Detection History</h1>
+
+    <table>
+
+        <thead>
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Prediction</th>
+            <th>Confidence</th>
+            <th>Date</th>
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        {% if records %}
+
+            {% for r in records %}
+
+            <tr>
+
+                <td>{{ r.id }}</td>
+
+                <td>{{ r.name }}</td>
+
+                <td class="group">{{ r.predicted_group }}</td>
+
+                <td>{{ (r.confidence*100)|round(2) }}%</td>
+
+                <td>{{ r.created_at }}</td>
+
+            </tr>
+
+            {% endfor %}
+
+        {% else %}
+
+            <tr>
+
+                <td colspan="5" style="text-align:center;">
+                    No Detection History Found
+                </td>
+
+            </tr>
+
+        {% endif %}
+
+        </tbody>
+
+    </table>
+
+    <div class="buttons">
+
+        <a href="{{ url_for('index') }}" class="backBtn">
+            ← Back
+        </a>
+
+        <form action="{{ url_for('clear_history') }}" method="POST">
+            <button
+                type="submit"
+                class="clearBtn"
+                onclick="return confirm('Delete all detection history?');">
+                 Clear History
+            </button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

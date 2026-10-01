@@ -1,0 +1,5 @@
+Fingerprint_Deduction/venv/
+Fingerprint_Deduction/__pycache__/
+Fingerprint_Deduction/dataset/
+Fingerprint_Deduction/static/uploads/
+Fingerprint_Deduction/*.db

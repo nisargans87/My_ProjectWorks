@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fingerprint Recognition System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="background"></div>
+<div class="glass">
+
+<div class="logo">
+
+<div class="scanner">
+
+<i class="fa-solid fa-fingerprint"></i>
+
+<div class="scanline"></div>
+</div>
+<h1>Fingerprint Recognition</h1>
+</div>
+{% if error %}
+<div class="error-box">
+<i class="fa-solid fa-circle-exclamation"></i>
+
+{{ error }}
+</div>
+{% endif %}
+
+<form method="POST"
+enctype="multipart/form-data"
+id="uploadForm">
+
+<div class="input-group">
+
+<label>
+
+<i class="fa-solid fa-user"></i>
+
+Full Name
+
+</label>
+
+<input
+type="text"
+name="name"
+placeholder="Enter your name"
+required>
+
+</div>
+
+<div class="upload-area"
+id="dropArea">
+
+<input
+type="file"
+id="fingerprint"
+name="fingerprint"
+accept="image/*"
+required>
+
+<div id="uploadContent">
+
+<i class="fa-solid fa-cloud-arrow-up"></i>
+
+<h3>Upload Fingerprint</h3>
+
+<p>
+Drag & Drop or Click Here
+</p>
+
+</div>
+
+<img
+id="preview"
+style="display:none;">
+
+</div>
+
+<button type="submit"
+id="predictBtn">
+
+<i class="fa-solid fa-microchip"></i>
+
+Verify Fingerprint
+
+</button>
+
+</form>
+
+<div class="bottom">
+
+<a href="{{ url_for('history') }}">
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+Detection History
+
+</a>
+
+<div id="clock"></div>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

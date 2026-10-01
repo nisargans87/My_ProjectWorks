@@ -1,0 +1,48 @@
+Programming Language
+
+Python 3.x – The core programming language used for the entire project, from model development to backend implementation. Chosen for its rich ecosystem of ML and web development libraries.
+
+Deep Learning Frameworks
+
+TensorFlow – An open-source deep learning framework used to build, train, and deploy the CNN model. It manages the underlying tensor computations and model optimization.
+Keras – A high-level neural network API built on TensorFlow, used to design CNN layers, compile the model, and manage training operations with simpler syntax.
+
+Core Model / Algorithm
+
+CNN (Convolutional Neural Network) – The main deep learning algorithm used for fingerprint classification. It automatically extracts hierarchical features (edges, ridges, patterns) through convolution and pooling layers, then classifies the image using fully connected layers.
+
+Computer Vision Libraries
+
+OpenCV – A computer vision library used for fingerprint image preprocessing, resizing, enhancement, and format conversion before feeding images into the model.
+Pillow (PIL) – Used for opening, processing, and converting fingerprint image formats to ensure compatibility across the pipeline.
+
+Data Processing & Evaluation Libraries
+
+NumPy – Handles fingerprint image data as multidimensional arrays, enabling fast numerical computation during preprocessing and training.
+Pandas – Used for dataset organization, loading, and manipulation operations like handling labels and metadata.
+Scikit-learn – Splits the dataset into training/testing sets and evaluates model performance using metrics like accuracy, precision, recall, and F1-score.
+Matplotlib – Visualizes dataset samples and plots training accuracy/loss graphs to track model learning progress.
+
+Web Framework & Frontend
+
+Flask – A lightweight Python web framework that connects the trained CNN model to a browser-based interface for image upload and prediction display.
+HTML5 – Structures the web pages for fingerprint upload and result display.
+CSS3 – Styles the layout and visual appearance of the web interface.
+JavaScript – Adds client-side interactivity and dynamic functionality to the web app.
+
+Development Tools
+
+Visual Studio Code – The IDE used for writing, debugging, and managing Python, HTML, CSS, and JavaScript files.
+Jupyter Notebook – Used for dataset exploration, model experimentation, and testing deep learning algorithms interactively.
+Git/GitHub – Used for source code version control and project backup.
+Python Virtual Environment (venv/Anaconda) – Manages project dependencies and maintains an isolated execution environment.
+
+Dataset
+
+SOCOFing (Sokoto Coventry Fingerprint Dataset) – A collection of fingerprint images in PNG format, used to train, validate, and test the CNN model for classification and prediction.
+
+Key Techniques Applied
+
+Image Preprocessing – Resizing, normalization, and noise handling to prepare fingerprint images for training and improve model accuracy.
+Feature Extraction – Automatic detection of ridge patterns and texture features by the CNN, replacing manual feature engineering.
+Model Evaluation Metrics – Accuracy, precision, recall, and F1-score used to measure how well the CNN performs on unseen data.

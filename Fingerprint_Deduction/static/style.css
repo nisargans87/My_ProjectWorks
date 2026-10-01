@@ -1,0 +1,743 @@
+/* =========================================================
+   GLOBAL UI THEME
+   ========================================================= */
+
+:root {
+    --primary: #38bdf8;
+    --primary-dark: #2563eb;
+    --secondary: #06b6d4;
+    --accent: #0dc676;
+
+    --background-dark: #020617;
+    --background: #0f172a;
+    --background-light: #111827;
+
+    --text-primary: #ffffff;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+
+    --button-gradient: linear-gradient(
+        135deg,
+        #2563eb,
+        #06b6d4
+    );
+
+    --success: #38f58a;
+
+    --shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(59, 130, 246, 0.15);
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--background);
+
+    overflow-x: hidden;
+
+    color: var(--text-primary);
+}
+
+
+/* =========================================================
+   BACKGROUND
+   ========================================================= */
+
+.background {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #2563eb,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at bottom right,
+            #06b6d4,
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #020617,
+            #0f172a,
+            #111827
+        );
+
+    z-index: -2;
+}
+
+
+.background::before {
+    content: "";
+
+    position: absolute;
+
+    width: 200%;
+    height: 200%;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.04) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.04) 1px,
+            transparent 1px
+        );
+
+    background-size: 50px 50px;
+
+    animation: gridMove 18s linear infinite;
+}
+
+
+@keyframes gridMove {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50px, -50px);
+    }
+
+}
+
+
+/* =========================================================
+   COMMON GLASS CONTAINER
+   ========================================================= */
+
+.glass {
+    width: 470px;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    background: var(--glass-bg);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid var(--glass-border);
+
+    box-shadow: var(--shadow);
+}
+
+
+/* =========================================================
+   LOGO / HEADER
+   ========================================================= */
+
+.logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.logo h1 {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: var(--text-primary);
+
+    margin-top: 15px;
+}
+
+
+.logo p {
+    color: var(--text-secondary);
+
+    margin-top: 8px;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FINGERPRINT SCANNER
+   ========================================================= */
+
+.scanner {
+    width: 120px;
+    height: 120px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background: rgba(255,255,255,.08);
+
+    border: 2px solid rgba(255,255,255,.12);
+
+    overflow: hidden;
+}
+
+
+.scanner i {
+    font-size: 70px;
+
+    color: var(--primary);
+
+    z-index: 2;
+}
+
+
+.scanline {
+    position: absolute;
+
+    width: 100%;
+    height: 4px;
+
+    background: var(--primary);
+
+    box-shadow: 0 0 20px cyan;
+
+    animation: scan 2.5s infinite;
+}
+
+
+@keyframes scan {
+
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 100%;
+    }
+
+    100% {
+        top: 0;
+    }
+
+}
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+.input-group {
+    margin-top: 20px;
+}
+
+
+.input-group label {
+    display: block;
+
+    color: var(--text-primary);
+
+    margin-bottom: 8px;
+
+    font-weight: 500;
+}
+
+
+.input-group input {
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    border: none;
+
+    outline: none;
+
+    background: rgba(14, 134, 148, 0.891);
+
+    color: var(--text-primary);
+
+    font-size: 15px;
+}
+
+
+.input-group input::placeholder {
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   UPLOAD AREA
+   ========================================================= */
+
+.upload-area {
+    margin-top: 25px;
+
+    height: 220px;
+
+    border: 2px dashed var(--primary);
+
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: .3s;
+}
+
+
+.upload-area:hover {
+    background: rgba(21, 165, 61, 0.20);
+}
+
+
+.upload-area input {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+
+#uploadContent {
+    text-align: center;
+
+    color: var(--text-primary);
+}
+
+
+#uploadContent i {
+    font-size: 60px;
+
+    margin-bottom: 12px;
+
+    color: var(--primary);
+}
+
+
+#uploadContent h3 {
+    font-size: 22px;
+
+    color: var(--text-primary);
+}
+
+
+#uploadContent p {
+    margin-top: 8px;
+
+    color: var(--text-secondary);
+}
+
+
+#preview {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   COMMON BUTTON
+   Used by Login, Dashboard, History and Result pages
+   ========================================================= */
+
+button {
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    background: var(--button-gradient);
+
+    color: var(--text-primary);
+
+    transition: .35s;
+}
+
+
+button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(6,182,212,.35);
+}
+
+
+/* =========================================================
+   COMMON LINKS
+   ========================================================= */
+
+a {
+    color: var(--primary);
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+
+a:hover {
+    color: var(--text-primary);
+}
+
+
+/* =========================================================
+   LOGIN / DASHBOARD / HISTORY COMMON NAVIGATION
+   ========================================================= */
+
+.bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+}
+
+
+.bottom a {
+    color: var(--primary);
+}
+
+
+.bottom a:hover {
+    color: var(--text-primary);
+}
+
+
+#clock {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.error-box {
+    margin-bottom: 20px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #7f1d1d;
+
+    color: var(--text-primary);
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   RESULT PAGE
+   ========================================================= */
+
+.result-card {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    width: 100%;
+}
+
+
+/* User name */
+
+.user-name {
+    margin-top: 20px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: var(--text-primary);
+
+    letter-spacing: 1px;
+}
+
+
+/* Fingerprint image */
+
+.result-image {
+    width: 220px;
+    height: 220px;
+
+    margin: 30px 0;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    border: 3px solid var(--primary);
+
+    box-shadow:
+        0 0 30px rgba(56,189,248,.45);
+}
+
+
+/* Section headings */
+
+.section-title {
+    color: var(--accent);
+
+    font-size: 18px;
+
+    margin-top: 15px;
+
+    font-weight: 600;
+}
+
+
+/* Prediction */
+
+.prediction {
+    font-size: 42px;
+
+    color: var(--success);
+
+    font-weight: 700;
+
+    margin-top: 8px;
+}
+
+
+/* Confidence */
+
+.confidence {
+    font-size: 34px;
+
+    color: var(--success);
+
+    font-weight: 700;
+
+    margin-top: 10px;
+}
+
+/* Result buttons */
+
+.result-buttons {
+    width: 100%;
+
+    margin-top: 35px;
+}
+
+
+.result-buttons a {
+    text-decoration: none;
+}
+
+
+.result-buttons button {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   RESULT DETAILS
+   ========================================================= */
+
+.result-details p,
+.result-details span {
+    color: var(--text-primary);
+}
+
+
+.result-details label {
+    color: var(--accent);
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   HISTORY PAGE
+   ========================================================= */
+
+/*
+   History uses exactly the same primary UI color
+   as Dashboard and Login.
+*/
+
+.history-title {
+    color: var(--text-primary);
+}
+
+
+.history-link {
+    color: var(--primary);
+}
+
+
+.history-link:hover {
+    color: var(--text-primary);
+}
+
+
+.history-card {
+    background: var(--glass-bg);
+
+    border: 1px solid var(--glass-border);
+
+    border-radius: 20px;
+
+    color: var(--text-primary);
+}
+
+
+.history-card h2,
+.history-card h3 {
+    color: var(--text-primary);
+}
+
+
+.history-card p,
+.history-card span {
+    color: var(--text-secondary);
+}
+
+
+/* =========================================================
+   COMMON PRIMARY LINK / BUTTON
+   ========================================================= */
+
+.primary-link,
+.dashboard-link,
+.history-link,
+.login-link {
+    color: var(--primary);
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition: .3s;
+}
+
+
+.primary-link:hover,
+.dashboard-link:hover,
+.history-link:hover,
+.login-link:hover {
+    color: var(--text-primary);
+}
+
+
+/* =========================================================
+   VERIFIED / SUCCESS
+   ========================================================= */
+
+.verified,
+.success,
+.success-text {
+    color: var(--success) !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 550px) {
+
+    .glass {
+        width: 95%;
+
+        padding: 25px;
+    }
+
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+
+    .scanner {
+        width: 100px;
+        height: 100px;
+    }
+    .scanner i {
+        font-size: 60px;
+    }
+    .upload-area {
+        height: 180px;
+    }
+    .result-image {
+        width: 180px;
+        height: 180px;
+    }
+    .prediction {
+        font-size: 34px;
+    }
+    .confidence {
+        font-size: 28px;
+    }
+
+}
